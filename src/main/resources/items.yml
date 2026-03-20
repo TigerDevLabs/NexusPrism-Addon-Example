@@ -1,0 +1,28 @@
+# Items registered by this addon.
+# Each key is the item's unique ID (used in recipes and machine configs).
+# These IDs match what you pass to MachineProcessingRecipe.builder().input() / .output().
+
+EXAMPLE_DUST:
+  material: GLOWSTONE_DUST
+  name: "&eExample Dust"
+  lore:
+    - "&7A glowing powder from the example addon."
+  glow: true
+
+EXAMPLE_INGOT:
+  material: GOLD_INGOT
+  name: "&6Example Ingot"
+  lore:
+    - "&7Refined example material."
+    - "&8Produced by the Example Furnace."
+  glow: false
+
+EXAMPLE_MACHINE_CORE:
+  material: NETHERITE_BLOCK
+  name: "&cExample Furnace"
+  lore:
+    - "&7Smelts Example Dust into Example Ingots."
+    - "&8Powered by energy."
+  behavior:
+    machine: true
+    machine-type: EXAMPLE_FURNACE

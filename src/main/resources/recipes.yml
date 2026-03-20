@@ -1,0 +1,15 @@
+# Standard crafting recipes registered by this addon.
+# Shape is a 3x3 grid; each letter maps to an item ID in the 'ingredients' section.
+# Use ' ' (space) for empty slots.
+
+example_machine_craft:
+  shape:
+    - "NNN"
+    - "NCN"
+    - "NNN"
+  ingredients:
+    N: NETHERITE_INGOT      # vanilla material name
+    C: EXAMPLE_INGOT        # addon item ID
+  result:
+    item: EXAMPLE_MACHINE_CORE
+    amount: 1

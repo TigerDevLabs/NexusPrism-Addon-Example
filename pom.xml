@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--
+        NexusPrism Addon Example
+        ========================
+        Copy this project as a starting point for your own addon.
+
+        Steps:
+          1. Change groupId / artifactId / version to your own.
+          2. Put your items in src/main/resources/items.yml
+          3. Put your machines in src/main/resources/machines.yml
+          4. Put recipes in src/main/resources/recipes.yml
+          5. Put Infinity Crafting recipes in src/main/resources/infinity_recipes/*.yml
+          6. Implement onEnable / onDisable in ExampleAddon.java
+          7. mvn package  →  drop the shaded jar into the server's addons/ folder
+    -->
+
+    <groupId>com.example</groupId>
+    <artifactId>my-nexusprism-addon</artifactId>
+    <version>1.0.0-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>My NexusPrism Addon</name>
+    <description>Example addon for NexusPrism</description>
+
+    <properties>
+        <java.version>21</java.version>
+        <maven.compiler.source>${java.version}</maven.compiler.source>
+        <maven.compiler.target>${java.version}</maven.compiler.target>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <repositories>
+        <!-- Paper API -->
+        <repository>
+            <id>papermc</id>
+            <url>https://repo.papermc.io/repository/maven-public/</url>
+        </repository>
+        <!-- NexusPrism API via JitPack -->
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    </repositories>
+
+    <dependencies>
+        <!-- NexusPrism API (provided — already on the server classpath) -->
+        <dependency>
+            <groupId>com.github.O-Tiger</groupId>
+            <artifactId>nexusprism-api</artifactId>
+            <version>master-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- Paper API (provided — already on the server classpath) -->
+        <dependency>
+            <groupId>io.papermc.paper</groupId>
+            <artifactId>paper-api</artifactId>
+            <version>1.21.4-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <finalName>${project.artifactId}-${project.version}</finalName>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.13.0</version>
+                <configuration>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+            <!-- Shade plugin — only needed if you have non-provided dependencies -->
+            <!--
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-shade-plugin</artifactId>
+                <version>3.5.3</version>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals><goal>shade</goal></goals>
+                        <configuration>
+                            <createDependencyReducedPom>false</createDependencyReducedPom>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            -->
+        </plugins>
+    </build>
+</project>

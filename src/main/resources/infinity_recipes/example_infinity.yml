@@ -1,0 +1,14 @@
+# Infinity Crafting Table recipe.
+# The 3x3 grid spans 3 nodes (each node contributes one row of 3 slots).
+# Layout: node at offset (-1,0) = top row, (0,0) = middle, (1,0) = bottom.
+# Use '' (empty string) for empty slots.
+
+id: example_infinity_smelt
+inputs:
+  - row: [EXAMPLE_DUST, EXAMPLE_DUST, EXAMPLE_DUST]
+  - row: [EXAMPLE_DUST, DIAMOND,      EXAMPLE_DUST]
+  - row: [EXAMPLE_DUST, EXAMPLE_DUST, EXAMPLE_DUST]
+output:
+  item: EXAMPLE_INGOT
+  amount: 8
+processing-time: 200   # ticks

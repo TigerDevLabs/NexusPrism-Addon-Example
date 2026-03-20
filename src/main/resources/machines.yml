@@ -1,0 +1,19 @@
+# Machines registered by this addon.
+# The top-level key is the machine type ID (referenced in item behavior: machine-type: EXAMPLE_FURNACE).
+
+EXAMPLE_FURNACE:
+  display-name: "Example Furnace"
+  processing-time: 80       # ticks per recipe cycle (80 = 4 seconds)
+  energy-per-tick: 10       # RF/t consumed while running
+  requires-energy: true
+  max-energy: 5000
+
+  # YAML-defined recipes for this machine type.
+  # You can also register recipes programmatically — see ExampleAddon.java.
+  recipes:
+    - id: example_dust_smelt
+      inputs:
+        EXAMPLE_DUST: 2
+      outputs:
+        EXAMPLE_INGOT: 1
+      processing-time: 80   # optional — overrides machine default

@@ -1,0 +1,9 @@
+id: my-addon
+name: My NexusPrism Addon
+version: 1.0.0
+author: YourName
+description: An example NexusPrism addon.
+main: com.example.myaddon.ExampleAddon
+
+# Optional: list other addon IDs that must load before this one
+# depend: [other-addon-id]
