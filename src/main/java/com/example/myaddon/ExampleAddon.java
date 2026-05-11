@@ -1,4 +1,4 @@
-package com.example.myaddon;
+﻿package com.example.myaddon;
 
 import io.github.otiger.nexusprism.api.addon.AbstractNexusAddon;
 import io.github.otiger.nexusprism.api.backpack.BackpackRegistry;
@@ -100,7 +100,7 @@ public class ExampleAddon extends AbstractNexusAddon {
             // prot.isInDuel(uuid)
         });
 
-        // Events — blood moon, sacrifice arc, isekai boss
+        // Events — blood moon, sacrifice arc, anime boss
         EventsRegistry.get().ifPresent(events -> {
             getLogger().info("Events module is available.");
             // events.isBloodMoonActive()
