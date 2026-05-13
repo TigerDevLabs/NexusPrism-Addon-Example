@@ -50,7 +50,7 @@
     <dependencies>
         <!-- NexusPrism API (provided — already on the server classpath) -->
         <dependency>
-            <groupId>com.github.O-Tiger</groupId>
+            <groupId>com.github.TigerDevLabs</groupId>
             <artifactId>nexusprism-api</artifactId>
             <version>master-SNAPSHOT</version>
             <scope>provided</scope>
