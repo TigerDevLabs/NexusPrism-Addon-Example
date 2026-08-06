@@ -1,4 +1,6 @@
-﻿package com.example.myaddon;
+
+
+package com.example.myaddon;
 
 import io.github.otiger.nexusprism.api.addon.AbstractNexusAddon;
 import io.github.otiger.nexusprism.api.backpack.BackpackRegistry;
@@ -9,8 +11,6 @@ import io.github.otiger.nexusprism.api.economy.JobRegistry;
 import io.github.otiger.nexusprism.api.energy.EnergyRegistry;
 import io.github.otiger.nexusprism.api.events.EventsRegistry;
 import io.github.otiger.nexusprism.api.holograms.HologramRegistry;
-import io.github.otiger.nexusprism.api.machines.recipe.MachineProcessingRecipe;
-import io.github.otiger.nexusprism.api.machines.recipe.MachineProcessingRegistry;
 import io.github.otiger.nexusprism.api.mmo.MmoRegistry;
 import io.github.otiger.nexusprism.api.protections.ProtectionsRegistry;
 import io.github.otiger.nexusprism.api.traits.TraitsRegistry;
@@ -100,7 +100,7 @@ public class ExampleAddon extends AbstractNexusAddon {
             // prot.isInDuel(uuid)
         });
 
-        // Events — blood moon, sacrifice arc, anime boss
+        // Events — blood moon, sacrifice arc, challenge boss
         EventsRegistry.get().ifPresent(events -> {
             getLogger().info("Events module is available.");
             // events.isBloodMoonActive()

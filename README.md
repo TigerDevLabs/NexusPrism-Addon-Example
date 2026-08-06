@@ -6,7 +6,7 @@
 
 ## English
 
-A ready-to-use template for creating addons for the [NexusPrism](https://github.com/TigerDevLabs/NexusPrism) Minecraft plugin.
+A ready-to-use template for creating addons for the [NexusPrism](https://github.com/O-Tiger/NexusPrism) Minecraft plugin.
 
 ### Features
 
@@ -107,7 +107,7 @@ This template is released under the [MIT License](LICENSE). Do whatever you want
 
 ## Português
 
-Um template pronto para criar addons para o plugin Minecraft [NexusPrism](https://github.com/TigerDevLabs/NexusPrism).
+Um template pronto para criar addons para o plugin Minecraft [NexusPrism](https://github.com/O-Tiger/NexusPrism).
 
 ### Funcionalidades
 
